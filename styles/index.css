@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --font: 1rem 'Old Standard TT', serif;
+  --bg-color-button-hover: #ffffff;
+  --text-color-button-hover: #000000;
+}
+
+body,
+html,
+input[type='submit'] {
+  background-color: var(--bg-color);
+  font: var(--font);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.button,
+input[type='submit'] {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* CLASE PARA LINKS */
+.button:hover,
+input[type='submit']:hover {
+  background-color: var(--bg-color-button-hover);
+  color: var(--text-color-button-hover);
+}
+
+.header {
+  display: none;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__hero {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../img/FwBBvGzX0AQpjpY.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+/* BOTÓN "TOUR DATES" */
+.hero__button {
+  width: 50%;
+  position: absolute;
+  bottom: 20%;
+  background-color: transparent;
+}
+
+.disc__img__one {
+  margin-top: -40%;
+}
+
+.disc__img__two p {
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+
+.disc__buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+  padding: 5% 10% 20% 10%;
+}
+
+/* CAROUSEL */
+.carousel_list {
+  display: flex;
+  list-style: none;
+  max-width: 600px;
+  margin-block: 2rem;
+  margin-inline: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__item {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 3rem;
+
+  aspect-ratio: 2/1;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.video__wrapper {
+  display: none;
+}
+
+.container__form {
+  padding: 10% 10% 20% 10%;
+  display: flex;
+  text-align: center;
+}
+
+.form__input__text {
+  padding: 2%;
+}
+
+.form__submit {
+  margin-top: 5%;
+  width: 50%;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  .hero__button {
+    width: 20%;
+  }
+
+  .container__disc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+  }
+
+  .disc__img__one {
+    margin-top: 0;
+  }
+
+  .disc__img__two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .disc__img__two img {
+    width: 70%;
+  }
+
+  .disc__img__two p {
+    text-align: center;
+    margin: 5% 0 5% 0;
+  }
+
+  .video__carousel {
+    display: none;
+  }
+
+  .container__video {
+    display: flex;
+  }
+  .video__wrapper {
+    display: block;
+  }
+
+  .container__form {
+    padding: 10%;
+    display: flex;
+    text-align: center;
+  }
+
+  .form__inputs {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .form__input__text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .form__submit {
+    margin-top: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container__grid {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+  }
+
+  .nav__icons {
+    width: fit-content;
+  }
+  .header {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .nav__img {
+    padding-top: 20%;
+    width: 80%;
+    align-self: center;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15%;
+  }
+
+  .nav .nav__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 8% 0 8% 0;
+  }
+
+  .nav__social {
+    height: 100vh;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 30%;
+  }
+
+  hr{
+    margin: 5% 0 5% 0;
+    align-self: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, .2);
+    height: 1px;
+  }
+
+  /* .nav .nav__social{
+    display: flex;
+    flex-direction: column;
+  } */
+}

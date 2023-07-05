@@ -1,0 +1,74 @@
+.container__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/FwBBvGzX0AQpjpY.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+}
+
+.date__strong{
+  font-weight: bold;
+}
+.date__item,
+.date__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0 10% 0;
+}
+
+.date__separator {
+  width: 50%;
+  background-color: rgba(255, 255, 255, .2);
+  height: 1px;
+}
+
+.ticket {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+
+  .date__item{
+    padding: 10% 0 2% 0;
+    flex-direction: row;
+  }
+
+  .date__info{
+    line-height: 1rem;
+    padding: 0;
+  }
+
+  .date__separator{
+    width: 80%;
+  }
+}
+
+@media(min-width:1200px){
+
+  .date__item{
+    padding: 10% 0 0 0;
+    flex-direction: row;
+  }
+
+  .date__separator{
+    margin: 2% 0;
+    width: 70%;
+  }
+
+  .date__info{
+    line-height: 1.5rem;
+  }
+
+  .ticket{
+    padding: 2% 10%;
+  }
+
+
+}

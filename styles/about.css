@@ -1,0 +1,24 @@
+.about-info {
+  padding: 5% 5%;
+}
+
+img {
+  width: 50%;
+  padding: 2%;
+}
+
+.text-info {
+  width: 50%;
+  border: 1px solid #fff;
+  padding: 2%;
+  text-align: center;
+}
+
+#info-1,
+#info-3 {
+  float: right;
+}
+
+#info-2 {
+  float: left;
+}
