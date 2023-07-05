@@ -82,7 +82,7 @@ input[type='submit']:hover {
 }
 
 .disc__img__one {
-  margin-top: -40%;
+  margin-top: -30%;
 }
 
 .disc__img__two p {
@@ -141,6 +141,12 @@ input[type='submit']:hover {
 }
 
 /* MEDIA QUERY */
+@media (min-width: 480px) {
+  .disc__img__one {
+    margin-top: -20%;
+  }
+}
+
 @media (min-width: 768px) {
   .hero__button {
     width: 20%;
