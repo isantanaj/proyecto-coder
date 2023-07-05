@@ -36,6 +36,11 @@ input[type='submit'] {
   color: var(--text-color);
 }
 
+.nav__list a:hover,
+.nav__social a:hover{
+  color: rgba(255, 255, 255, .2);
+}
+
 ul li {
   list-style-type: none;
 }
