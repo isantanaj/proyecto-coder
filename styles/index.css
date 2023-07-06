@@ -22,6 +22,87 @@ input[type='submit'] {
   color: var(--text-color);
 }
 
+/* MENU MOVIL */
+.menu__movil a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  background: transparent;
+  text-shadow: 1px 1px black;
+}
+
+.menu__movil input[type="checkbox"], .menu__movil .fa-bars, .menu__movil .fa-times {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.nav__img{
+  padding: 10% 0 5% 0;
+  width: 50%;
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3% 0 3% 30%;
+}
+
+.nav__list a,.nav__social a,
+.nav__list a i,.nav__social a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  gap: 20px;
+  padding: 3% 0 3% 0;
+}
+
+.nav__social a:nth-last-child(){
+  padding-bottom: 10%;
+}
+.menu__movil .fa-bars, .menu__movil .fa-times {
+  font-size: 40px;
+  pointer-events: none;
+}
+
+.menu__movil input[type="checkbox"] {
+  opacity: 0;
+}
+
+.menu__movil {
+  color: white;
+  position: relative;
+  background: var(--bg-color);
+  min-height: 40px;
+  z-index: 10;
+}
+
+.menu__movil nav {
+  display: none;
+}
+
+.menu__movil input:checked ~ nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__movil input:checked ~ .fa-bars {
+  display: none;
+}
+
+.menu__movil input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -132,6 +213,7 @@ input[type='submit']:hover {
 }
 
 .form__input__text {
+  text-align: center;
   padding: 2%;
 }
 
@@ -148,6 +230,11 @@ input[type='submit']:hover {
 }
 
 @media (min-width: 768px) {
+  
+  .nav__list{
+    padding: 3% 0 3% 40%;
+  }
+
   .hero__button {
     width: 20%;
   }
@@ -214,6 +301,10 @@ input[type='submit']:hover {
 }
 
 @media (min-width: 1200px) {
+  .menu__movil{
+    display: none;
+  }
+
   .container__grid {
     display: grid;
     grid-template-columns: 20% 1fr;
@@ -272,8 +363,4 @@ input[type='submit']:hover {
     height: 1px;
   }
 
-  /* .nav .nav__social{
-    display: flex;
-    flex-direction: column;
-  } */
 }
