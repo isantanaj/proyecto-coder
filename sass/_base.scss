@@ -26,7 +26,10 @@
     justify-content: center;
   }
 
-  @mixin grid-layout{
-    display: grid;
-    grid-template-columns: 20% 1fr;
+  @mixin tablet{
+    @media(min-width:$tablet){
+        @content;
+        display: grid;
+        grid-template-columns: 20% 1fr;
+    }
   }
