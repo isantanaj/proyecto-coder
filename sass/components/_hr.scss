@@ -1,0 +1,26 @@
+.date__separator {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 1px;
+}
+
+@media (min-width: 768px) {
+  .date__separator {
+    width: 80%;
+  }
+}
+
+@media (min-width: $desk) {
+  hr {
+    margin: 5% 0 5% 0;
+    align-self: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 1px;
+  }
+
+  .date__separator {
+    margin: 2% 0;
+    width: 70%;
+  }
+}

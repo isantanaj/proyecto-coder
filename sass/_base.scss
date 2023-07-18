@@ -1,35 +1,43 @@
 /*Reset*/
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    width: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
 
 /*Variables*/
-  $bg-color: #000000;
-  $font-color: #ffffff;
-  $font: 1rem 'Old Standard TT', serif;
-  $bg-button-hover: #ffffff;
-  $font-color-hover:#000000;
-  $button-border: 1px solid #ffffff;
-  $button-radius: 5px;
-  $tablet: 768px;
-  $desk: 1200px;
+$bg-color: #000000;
+$font-color: #ffffff;
+$font: 1rem 'Old Standard TT', serif;
+$bg-button-hover: #ffffff;
+$font-color-hover: #000000;
+$button-border: 1px solid #ffffff;
+$button-radius: 5px;
+$tablet: 768px;
+$desk: 1200px;
+
+body,
+html,
+input[type='submit'] {
+  background-color: var(--bg-color);
+  font: var(--font);
+  color: var(--text-color);
+}
 
 /*Mixins*/
-  @mixin flex-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  @mixin tablet{
-    @media(min-width:$tablet){
-        @content;
-        display: grid;
-        grid-template-columns: 20% 1fr;
-    }
+@mixin desk {
+  @media (min-width: $desk) {
+    @content;
+    display: grid;
+    grid-template-columns: 20% 1fr;
   }
+}
