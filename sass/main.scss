@@ -1,14 +1,14 @@
 @import "./base";
 
 @import "./components/buttons";
+@import "./components/hero";
+@import "./components/header";
 @import "./components/carousel";
 @import "./components/form";
-@import "./components/header";
-@import "./components/hero";
 @import "./components/hr";
 
 @import "./pages/index.scss";
 @import "./pages/about.scss";
-@import "./pages/contact.scss";
 @import "./pages/discography.scss";
 @import "./pages/tour.scss";
+@import "./pages/contact.scss";

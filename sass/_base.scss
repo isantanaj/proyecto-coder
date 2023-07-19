@@ -1,12 +1,3 @@
-/*Reset*/
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  width: 100%;
-}
-
 /*Variables*/
 $bg-color: #000000;
 $font-color: #ffffff;
@@ -18,12 +9,25 @@ $button-radius: 5px;
 $tablet: 768px;
 $desk: 1200px;
 
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@mixin general-style{
+  background-color: #000000;
+  font: 1rem 'Old Standard TT', serif;;
+  color: #ffffff;
+}
+
 body,
-html,
-input[type='submit'] {
-  background-color: var(--bg-color);
-  font: var(--font);
-  color: var(--text-color);
+html{
+  @include general-style;
+  height: 100vh
 }
 
 /*Mixins*/
@@ -40,4 +44,8 @@ input[type='submit'] {
     display: grid;
     grid-template-columns: 20% 1fr;
   }
+}
+
+@mixin flex{
+    display: flex;
 }

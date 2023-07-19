@@ -1,32 +1,19 @@
-
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    &__hero {
-      display: flex;
-      justify-content: center;
-      height: 100vh;
-      background-image: url(../img/FwBBvGzX0AQpjpY.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      text-align: center;
-      /* BOTÓN "TOUR DATES" */
-      &__button {
-        width: 50%;
-        position: absolute;
-        bottom: 20%;
-        background-color: transparent;
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-@media (min-width: 768px) {
-  
-    .hero__button {
-      width: 20%;
-    }
-  
+  &__hero {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/FwBBvGzX0AQpjpY.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    /* BOTÓN "TOUR DATES" */
   }
+}
+
+

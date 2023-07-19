@@ -1,0 +1,166 @@
+/* MENU MOVIL */
+.menu__movil a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  background: transparent;
+  text-shadow: 1px 1px black;
+}
+
+.menu__movil input[type='checkbox'],
+.menu__movil .fa-bars,
+.menu__movil .fa-times {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.nav__img {
+  padding: 2%;
+  width: 50%;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3% 0 3% 30%;
+}
+
+.nav__list a,
+.nav__social a,
+.nav__list a i,
+.nav__social a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  gap: 20px;
+  padding: 3% 0 3% 0;
+  &:hover{
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.nav__social a:last-child() {
+  padding-bottom: 10%;
+}
+
+.menu__movil .fa-bars,
+.menu__movil .fa-times {
+  font-size: 40px;
+  pointer-events: none;
+}
+
+.menu__movil input[type='checkbox'] {
+  opacity: 0;
+}
+
+.menu__movil {
+  color: white;
+  position: relative;
+  background: var(--bg-color);
+  min-height: 40px;
+  z-index: 10;
+}
+
+.menu__movil nav {
+  display: none;
+}
+
+.menu__movil input:checked ~ nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__movil input:checked ~ .fa-bars {
+  display: none;
+}
+
+.menu__movil input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+
+
+ul li {
+  list-style-type: none;
+}
+
+.header {
+  display: none;
+}
+
+/*TABLET*/
+@media (min-width: $tablet) {
+  .nav__list {
+    padding: 3% 0 3% 40%;
+  }
+
+  .nav__img {
+    padding: 2%;
+    width: 30%;
+  }
+}
+/*DESK*/
+@media (min-width: $desk) {
+  .menu__movil {
+    display: none;
+  }
+
+  .container__grid {
+    @include desk;
+  }
+
+  .nav__icons {
+    width: fit-content;
+  }
+  .header {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .nav__img {
+    padding-top: 20%;
+    width: 80%;
+    align-self: center;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15%;
+  }
+
+  .nav .nav__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 8% 0 8% 0;
+  }
+
+  .nav__social {
+    height: 100vh;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 30%;
+  }
+}
