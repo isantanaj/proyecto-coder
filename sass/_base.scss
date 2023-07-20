@@ -9,6 +9,7 @@ $button-radius: 5px;
 $tablet: 768px;
 $desk: 1200px;
 
+
 /*Reset*/
 * {
   margin: 0;
@@ -16,6 +17,10 @@ $desk: 1200px;
   border: 0;
   box-sizing: border-box;
   width: 100%;
+}
+.hide__title{
+  position: absolute;
+  z-index: -1;
 }
 
 @mixin general-style{
