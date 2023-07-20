@@ -1,0 +1,41 @@
+.container-about {
+  @include flex;
+  flex-direction: column;
+}
+
+.about-info {
+  padding: 5% 5%;
+}
+
+.info__img {
+  width: 100%;
+  padding: 2%;
+}
+.info__img {
+  width: 100%;
+}
+.text-info {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+@media (min-width: $desk) {
+  .about-info {
+    @include flex;
+  }
+
+  #info-2 {
+    @include flex;
+    flex-direction: row-reverse;
+  }
+  .info__img {
+    width: 50%;
+  }
+  .text-info{
+    width: 50%;
+  }
+}

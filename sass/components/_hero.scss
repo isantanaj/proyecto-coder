@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__hero {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/FwBBvGzX0AQpjpY.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    /* BOTÓN "TOUR DATES" */
+  }
+}
+
+

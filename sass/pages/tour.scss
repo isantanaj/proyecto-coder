@@ -1,8 +1,5 @@
 .container__date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/FwBBvGzX0AQpjpY.jpg);
   background-repeat: no-repeat;
@@ -11,7 +8,7 @@
   text-align: center;
 }
 
-.date__strong{
+.date__strong {
   font-weight: bold;
 }
 .date__item,
@@ -23,52 +20,33 @@
   padding: 10% 0 10% 0;
 }
 
-.date__separator {
-  width: 50%;
-  background-color: rgba(255, 255, 255, .2);
-  height: 1px;
-}
-
 .ticket {
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
-
-  .date__item{
+@media (min-width: $tablet) {
+  .date__item {
     padding: 10% 0 2% 0;
     flex-direction: row;
   }
 
-  .date__info{
+  .date__info {
     line-height: 1rem;
     padding: 0;
   }
-
-  .date__separator{
-    width: 80%;
-  }
 }
 
-@media(min-width:1200px){
-
-  .date__item{
+@media (min-width: $desk) {
+  .date__item {
     padding: 10% 0 0 0;
     flex-direction: row;
   }
 
-  .date__separator{
-    margin: 2% 0;
-    width: 70%;
-  }
-
-  .date__info{
+  .date__info {
     line-height: 1.5rem;
   }
 
-  .ticket{
+  .ticket {
     padding: 2% 10%;
   }
-
-
 }

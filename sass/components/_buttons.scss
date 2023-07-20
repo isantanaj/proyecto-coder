@@ -1,0 +1,58 @@
+
+.button,
+input[type='submit'] {
+  @include general-style;
+  padding: 10px;
+  border: $button-border;
+  border-radius: 5px;
+  background-color: $bg-color;
+  color: $font-color;
+  cursor:pointer;
+  &:hover {
+    background-color: $bg-button-hover;
+    color: $font-color-hover;
+  }
+}
+
+.hero__button {
+  margin-bottom: 25%;
+    width: 50%;
+  background-color: transparent;
+  z-index: 0;
+  height: fit-content;
+  align-self: flex-end;
+  &hover {
+    background-color: $bg-button-hover;
+    color: $font-color-hover;
+  }
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .hero__button {
+    width: 20%;
+  }
+}
+
+@media (min-width: $desk) {
+  .hero__button {
+    margin-bottom: 10%;
+  }
+}
+
+.button:hover {
+  background-color: var($bg-button-hover);
+  color: var($font-color-hover);
+}
+
+.disc__buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+  padding: 5% 10% 20% 10%;
+}

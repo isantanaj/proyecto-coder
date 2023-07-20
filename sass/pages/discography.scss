@@ -1,0 +1,18 @@
+.container__discography{
+  @include flex-center;
+  padding: 10% 5%;
+}
+
+@media(min-width:$tablet){
+  .disc{
+    padding-bottom: 5%;
+  }
+}
+
+@media(min-width:$desk){
+  .discography{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}

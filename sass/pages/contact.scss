@@ -1,0 +1,35 @@
+.container__contact {
+  @include flex-center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/Fw6IMxIX0AECxKQ.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20% 0 20% 0;
+  }
+  
+  .contact {
+    width: 80%;
+    text-align: center;
+    border: $button-border;
+    background-color: #000000;
+  }
+  
+  .managment,
+  .worldwide,
+  .booking {
+    margin: 5% 0;
+  }
+
+  @media(min-width:$tablet){
+    .container__contact{
+      padding:5% 0 5% 0;
+    }
+  }
+  @media(min-width:$desk){
+    .container__contact{
+      padding: 20% 0 40% 0;
+    }
+    .contact{
+      width: 50%;
+    }
+  }
