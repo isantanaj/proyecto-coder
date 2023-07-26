@@ -42,7 +42,7 @@
   width: auto;
   gap: 20px;
   padding: 3% 0 3% 0;
-  &:hover{
+  &:hover {
     color: rgba(255, 255, 255, 0.2);
   }
 }
@@ -88,8 +88,6 @@
   display: none;
 }
 
-
-
 ul li {
   list-style-type: none;
 }
@@ -114,9 +112,12 @@ ul li {
   .menu__movil {
     display: none;
   }
-
   .container__grid {
     @include desk;
+  }
+
+  .nav__list {
+    padding: 3% 0 3% 25%;
   }
 
   .nav__icons {
@@ -133,7 +134,7 @@ ul li {
   }
 
   .nav__img {
-    padding-top: 20%;
+    padding-top: 50%;
     width: 80%;
     align-self: center;
   }

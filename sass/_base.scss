@@ -9,7 +9,6 @@ $button-radius: 5px;
 $tablet: 768px;
 $desk: 1200px;
 
-
 /*Reset*/
 * {
   margin: 0;
@@ -18,21 +17,21 @@ $desk: 1200px;
   box-sizing: border-box;
   width: 100%;
 }
-.hide__title{
+.hide__title {
   position: absolute;
   z-index: -1;
 }
 
-@mixin general-style{
+@mixin general-style {
   background-color: #000000;
-  font: 1rem 'Old Standard TT', serif;;
+  font: 1rem 'Old Standard TT', serif;
   color: #ffffff;
 }
 
 body,
-html{
+html {
   @include general-style;
-  height: 100vh
+  height: 100vh;
 }
 
 /*Mixins*/
@@ -51,6 +50,6 @@ html{
   }
 }
 
-@mixin flex{
-    display: flex;
+@mixin flex {
+  display: flex;
 }

@@ -17,16 +17,16 @@
 body,
 html {
   background-color: #000000;
-  font: 1rem "Old Standard TT", serif;
+  font: 1rem 'Old Standard TT', serif;
   color: #ffffff;
   height: 100vh;
 }
 
 /*Mixins*/
 .button,
-input[type=submit] {
+input[type='submit'] {
   background-color: #000000;
-  font: 1rem "Old Standard TT", serif;
+  font: 1rem 'Old Standard TT', serif;
   color: #ffffff;
   padding: 10px;
   border: 1px solid #ffffff;
@@ -36,11 +36,23 @@ input[type=submit] {
   cursor: pointer;
 }
 .button:hover,
-input[type=submit]:hover {
+input[type='submit']:hover {
   background-color: #ffffff;
   color: #000000;
+  animation: btn__hover 1.2s ease;
 }
 
+@keyframes btn__hover {
+  0% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #eeeeee;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
 .hero__button {
   margin-bottom: 25%;
   width: 50%;
@@ -108,7 +120,7 @@ a {
   text-shadow: 1px 1px black;
 }
 
-.menu__movil input[type=checkbox],
+.menu__movil input[type='checkbox'],
 .menu__movil .fa-bars,
 .menu__movil .fa-times {
   position: absolute;
@@ -161,7 +173,7 @@ a {
   pointer-events: none;
 }
 
-.menu__movil input[type=checkbox] {
+.menu__movil input[type='checkbox'] {
   opacity: 0;
 }
 
@@ -223,6 +235,9 @@ ul li {
   }
 }
 @media (min-width: 1200px) {
+  .nav__list {
+    padding: 3% 0 3% 25%;
+  }
   .nav__icons {
     width: fit-content;
   }
@@ -236,7 +251,7 @@ ul li {
     height: 100vh;
   }
   .nav__img {
-    padding-top: 20%;
+    padding-top: 50%;
     width: 80%;
     align-self: center;
   }
@@ -474,7 +489,8 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/FwBBvGzX0AQpjpY.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/FwBBvGzX0AQpjpY.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -525,7 +541,8 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Fw6IMxIX0AECxKQ.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/Fw6IMxIX0AECxKQ.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20% 0 20% 0;
